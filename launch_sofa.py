@@ -67,7 +67,7 @@ def main():
     #  Allows executing from terminal directly
     #  Requires adjusting to own path
     # sofa_lib_path = "/home/jjalora/sofa/build/lib"
-    sofa_lib_path = os.path.expanduser('~/sofa/build/lib/')
+    sofa_lib_path = os.path.join(os.environ.get('SOFA_BLD'), "lib")
     if not os.path.exists(sofa_lib_path):
         raise RuntimeError('Path non-existent, sofa_lib_path should be modified to point to local SOFA installation'
                            'in main() in launch_sofa.py')
