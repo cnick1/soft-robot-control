@@ -290,8 +290,8 @@ conda activate sofa
 There are two methods to launching simulations using soft-robot-control with Sofa. Both require setting the problem file
 in `problem_specification.py`.
 
-1. Run with the simulation GUI. `$SOFA_BLD/bin/runSofa -l $SP3_BLD/lib/libSofaPython3.so ~/soft-robot-control/launch_sofa.py` then `python3 ~/soft-robot-control/examples/diamond/diamond_rompc.py run_rompc_solver` to run controller.
-Ensure that the `diamond_rompc` problem in `problem_specification.py` is uncommented.
+1. Run with the simulation GUI. `$SOFA_BLD/bin/runSofa -l $SP3_BLD/lib/libSofaPython3.so ~/soft-robot-control/launch_sofa.py` then `python3 ~/soft-robot-control/examples/diamond/diamond_koopman.py run_koopman_solver` to run controller.
+Ensure that the `diamond_koopman` problem in `problem_specification.py` is uncommented.
 
 2. Run in the background. `python launch_sofa.py` (Requires modifying `sofa_lib_path` to match environment in `launch_sofa.py` file)
 
